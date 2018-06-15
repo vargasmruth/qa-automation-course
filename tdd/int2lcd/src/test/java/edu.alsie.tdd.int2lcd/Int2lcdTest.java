@@ -10,5 +10,16 @@ public class Int2lcdTest {
     Assert.assertEquals(0, 0);
   }
 
+  @Test
+  public void testGivenAThenIsDigit() {
+    Int2lcd int2lcd = new Int2lcd();
+    Assert.assertTrue(int2lcd.isDigit('a'));
+  }
+
+  @Test
+  public void testGiven1ThenIsDigit() {
+    Int2lcd int2lcd = new Int2lcd();
+    Assert.assertTrue(int2lcd.isDigit('1'));
+  }
 
 }

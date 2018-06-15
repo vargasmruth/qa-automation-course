@@ -9,4 +9,12 @@ public class Int2lcd {
   {
     return (Character.isDigit(ch));
   }
+
+  public static boolean isNumber(String num)
+  {
+    for(int i = 0; i < num.length(); i ++){
+      if (!isDigit(num.charAt(i))) { return false; }
+  }
+  return true;
+  }
 }

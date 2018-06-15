@@ -22,4 +22,16 @@ public class Int2lcdTest {
     Assert.assertTrue(int2lcd.isDigit('1'));
   }
 
+  @Test
+  public void testGivenABCThenIsDigit() {
+    Int2lcd int2lcd = new Int2lcd();
+    Assert.assertTrue(int2lcd.isNumber("ABC"));
+  }
+
+  @Test
+  public void testGiven123ThenIsDigit() {
+    Int2lcd int2lcd = new Int2lcd();
+    Assert.assertTrue(int2lcd.isNumber("123"));
+  }
+
 }

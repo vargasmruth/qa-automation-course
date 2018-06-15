@@ -33,4 +33,21 @@ public class Int2lcd {
     return "";
   }
 
+  public String printDigit(int number) {
+    switch (number) {
+      case 1:  return NONE + ELE1 + ELE1;
+      case 2:  return ELE2 + ELE3 + ELE4;
+      case 3:  return ELE2 + ELE3 + ELE3;
+      case 4:  return NONE + ELE5 + ELE1;
+      case 5:  return ELE2 + ELE4 + ELE3;
+      case 6:  return ELE2 + ELE4 + ELE5;
+      case 7:  return ELE2 + ELE1 + ELE1;
+      case 8:  return ELE2 + ELE5 + ELE5;
+      case 9:  return ELE2 + ELE5 + ELE3;
+      case 0:  return ELE2 + ELE6 + ELE5;
+      default: return "";
+    }
+  }
+
+
 }

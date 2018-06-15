@@ -52,7 +52,7 @@ public class Int2lcdTest {
   public void testGivenAThenPrint1() {
     Int2lcd int2lcd = new Int2lcd();
     String expected = " \n" + "  |\n" +"  |\n";
-    String actual = int2lcd.print1('A');
+    String actual = int2lcd.print1('a');
     Assert.assertEquals(expected, actual);
   }
 
@@ -63,5 +63,14 @@ public class Int2lcdTest {
     String actual = int2lcd.print1('1');
     Assert.assertEquals(expected, actual);
   }
+
+  @Test
+  public void testGiven21ThenPrintDigit() {
+    Int2lcd int2lcd = new Int2lcd();
+    String expected = " \n" + "  |\n" +"  |\n";
+    String actual = int2lcd.printDigit(1);
+    Assert.assertEquals(expected, actual);
+  }
+
 
 }

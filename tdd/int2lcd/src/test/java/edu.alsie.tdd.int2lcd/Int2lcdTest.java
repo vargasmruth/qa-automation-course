@@ -40,4 +40,28 @@ public class Int2lcdTest {
     Assert.assertTrue(int2lcd.isNumber("1a2"));
   }
 
+  @Test
+  public void testGiven2ThenPrint1() {
+    Int2lcd int2lcd = new Int2lcd();
+    String expected = " \n" + "  |\n" +"  |\n";
+    String actual = int2lcd.print1('2');
+    Assert.assertEquals(expected, actual);
+  }
+
+  @Test
+  public void testGivenAThenPrint1() {
+    Int2lcd int2lcd = new Int2lcd();
+    String expected = " \n" + "  |\n" +"  |\n";
+    String actual = int2lcd.print1('A');
+    Assert.assertEquals(expected, actual);
+  }
+
+  @Test
+  public void testGiven1ThenPrint1() {
+    Int2lcd int2lcd = new Int2lcd();
+    String expected = " \n" + "  |\n" +"  |\n";
+    String actual = int2lcd.print1('1');
+    Assert.assertEquals(expected, actual);
+  }
+
 }

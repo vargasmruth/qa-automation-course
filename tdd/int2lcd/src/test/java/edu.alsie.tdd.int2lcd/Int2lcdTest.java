@@ -34,4 +34,10 @@ public class Int2lcdTest {
     Assert.assertTrue(int2lcd.isNumber("123"));
   }
 
+  @Test
+  public void testGiven1a2ThenIsDigit() {
+    Int2lcd int2lcd = new Int2lcd();
+    Assert.assertTrue(int2lcd.isNumber("1a2"));
+  }
+
 }

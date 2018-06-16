@@ -50,4 +50,17 @@ public class Int2lcd {
     }
   }
 
+  public String [][] createMatrix(int number) {
+    String num = Integer.toString(number);
+    String [] aux = num.split("");
+
+    String[][] mm = new String[][]{};
+
+    String[][] res = new String[num.length()][];
+    for (int i = 0; i < num.length(); i++) {
+      res[i] = createRow(Integer.parseInt(aux[i]));
+    }
+
+    return res;
+  }
 }

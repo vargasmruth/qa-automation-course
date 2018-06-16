@@ -46,6 +46,13 @@ public class Int2lcdTest {
     Assert.assertEquals(expected, actual);
   }
 
+  @Test
+  public void testCreateMatrizIfNumberIs31() {
+    Int2lcd int2lcd = new Int2lcd();
+    String [][] expected = {{" _ ", " _|", " _|"}, {"   ", "  |", "  |"}};
+    String [][] actual = int2lcd.createMatrix(31);
+    Assert.assertEquals(expected, actual);
+  }
 
 
 

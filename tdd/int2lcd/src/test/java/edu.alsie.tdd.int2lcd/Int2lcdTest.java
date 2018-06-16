@@ -30,7 +30,13 @@ public class Int2lcdTest {
     Assert.assertEquals(expected, actual);
   }
 
-  
+  @Test
+  public void testCreateRowIfNumberIs3() {
+    Int2lcd int2lcd = new Int2lcd();
+    String [] expected = {" _ ", " _|", " _|"};
+    String [] actual = int2lcd.createRow(3);
+    Assert.assertEquals(expected, actual);
+  }
 
 
 

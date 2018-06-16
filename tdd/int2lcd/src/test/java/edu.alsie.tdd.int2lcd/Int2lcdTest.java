@@ -54,6 +54,14 @@ public class Int2lcdTest {
     Assert.assertEquals(expected, actual);
   }
 
+  @Test
+  public void testCreateMatrizIfNumberIs1Negative() {
+    Int2lcd int2lcd = new Int2lcd();
+    String [][] expected = {};
+    String [][] actual = int2lcd.createMatrix(-1);
+    Assert.assertEquals(expected, actual);
+  }
+
 
 
 

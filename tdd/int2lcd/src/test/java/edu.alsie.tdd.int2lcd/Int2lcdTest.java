@@ -22,6 +22,18 @@ public class Int2lcdTest {
     Assert.assertFalse(int2lcd.isDigit(21));
   }
 
+  @Test
+  public void testCreateRowIfNumberIs12() {
+    Int2lcd int2lcd = new Int2lcd();
+    String [] expected = {};
+    String [] actual = int2lcd.createRow(12);
+    Assert.assertEquals(expected, actual);
+  }
+
+  
+
+
+
 
 
 

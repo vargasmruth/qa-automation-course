@@ -38,6 +38,14 @@ public class Int2lcdTest {
     Assert.assertEquals(expected, actual);
   }
 
+  @Test
+  public void testCreateRowIfNumberIs1Negative() {
+    Int2lcd int2lcd = new Int2lcd();
+    String [] expected = {};
+    String [] actual = int2lcd.createRow(-1);
+    Assert.assertEquals(expected, actual);
+  }
+
 
 
 

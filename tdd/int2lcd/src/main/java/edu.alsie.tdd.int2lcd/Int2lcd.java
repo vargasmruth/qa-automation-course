@@ -72,4 +72,21 @@ public class Int2lcd {
         temp[j][i] = m[i][j];
     return temp;
   }
+
+  public String printIntToLCD(int number) {
+    String res = "";
+    String aux = "";
+    String[][] mmt = transposeMatrix(createMatrix(number));
+
+    for (int x=0; x < mmt.length; x++) {
+      for (int y=0; y < mmt[x].length; y++) {
+        aux = aux + mmt[x][y];
+      }
+      res = res + aux + "\n";
+      aux = "";
+    }
+    return res;
+  }
+
+
 }

@@ -63,10 +63,18 @@ public class Int2lcdTest {
   }
 
   @Test
-  public void testTramposeMatrizThenNumberIs10() {
+  public void testTramposeMatrizThenNumberIs31() {
     Int2lcd int2lcd = new Int2lcd();
     String [][] expected = {{ " _ ", "   " }, { " _|", "  |" }, { " _|", "  |"}};
     String [][] actual = int2lcd.transposeMatrix(int2lcd.createMatrix(31));
+    Assert.assertEquals(expected, actual);
+  }
+
+  @Test
+  public void testGiven31LCDThenPrintIntToLCDIs3Number() {
+    Int2lcd int2lcd = new Int2lcd();
+    String expected = " _ \n _|\n _|\n";
+    String actual = int2lcd.printIntToLCD(3);
     Assert.assertEquals(expected, actual);
   }
 

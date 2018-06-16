@@ -20,7 +20,7 @@ public class Int2lcd {
   public String [] createRow(int num) {
 
     String[] array = new String[]{};
-    if (isDigit(num)){
+    if (isDigit(num) && num >=0){
       switch (num) {
         case 1:  array = new String[]{NONE, ELE1, ELE1};
           break;
